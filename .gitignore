@@ -1,7 +1,7 @@
 local func = Instance.new("BindableFunction")
 
 func.OnInvoke = function()
-    setclipboard("https://discord.gg/wpZMYEsZ")
+    setclipboard("https://discord.gg/FHVCAx2q7N")
 end
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
