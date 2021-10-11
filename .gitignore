@@ -6,7 +6,7 @@ end
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Update Script",
-    Text = "This version of Project: Evolution is outdated",
+    Text = "Project Script Xander Hub",
     Button1 = "Copy Discord",
     Callback = func
 })
