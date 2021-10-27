@@ -1932,6 +1932,39 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			ColorSelection.ScaleType = Enum.ScaleType.Fit
 			ColorSelection.Visible = false
 
+            HueSelection.Name = "HueSelection"
+			HueSelection.Parent = Hue
+			HueSelection.AnchorPoint = Vector2.new(0.5, 0.5)
+			HueSelection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			HueSelection.BackgroundTransparency = 1.000
+			HueSelection.Position = UDim2.new(0.48, 0, 1 - select(1, Color3.toHSV(preset)))
+			HueSelection.Size = UDim2.new(0, 18, 0, 18)
+			HueSelection.Image = "http://www.roblox.com/asset/?id=5062065441"
+			HueSelection.Visible = false
+
+			Color.Name = "Color"
+			Color.Parent = Title
+			Color.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+			Color.Position = UDim2.new(0, -23, 0, 46)
+			Color.Size = UDim2.new(0, 246, 0, 80)
+			Color.ZIndex = 10
+			Color.Image = "rbxassetid://4155801252"
+
+			ColorCorner.CornerRadius = UDim.new(0, 3)
+			ColorCorner.Name = "ColorCorner"
+			ColorCorner.Parent = Color
+
+			ColorSelection.Name = "ColorSelection"
+			ColorSelection.Parent = Color
+			ColorSelection.AnchorPoint = Vector2.new(0.5, 0.5)
+			ColorSelection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ColorSelection.BackgroundTransparency = 1.000
+			ColorSelection.Position = UDim2.new(preset and select(3, Color3.toHSV(preset)))
+			ColorSelection.Size = UDim2.new(0, 18, 0, 18)
+			ColorSelection.Image = "http://www.roblox.com/asset/?id=5062065441"
+			ColorSelection.ScaleType = Enum.ScaleType.Fit
+			ColorSelection.Visible = false
+
 			Toggle.Name = "Toggle"
 			Toggle.Parent = Title
 			Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
